@@ -24,6 +24,11 @@ public class CPersona {
     @Autowired
     SPersona persoServ;
     
+    @PostMapping ("/autenticacion/login")
+    public Persona loginPersona(@RequestBody Persona pers) {
+        return persoServ.loginPersona(pers.getEmail(),pers.getPassword());
+    }
+    
     @GetMapping("/lista")
     @ResponseBody
     public List<Persona> verPersonas(){

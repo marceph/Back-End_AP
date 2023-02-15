@@ -46,11 +46,17 @@ public class Persona {
     @NotNull
     @Size(min = 1, max = 400, message = "No cumple con la longitud")
     private String cv;
+    
+    @Size(min = 1, max = 100, message = "No cumple con la longitud")
+    private String email;
+    
+    @Size(min = 4, max = 20, message = "No cumple con la longitud")
+    private String password;
 
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, String titulo, String aboutme, String banner, String img, String username, String cv) {
+    public Persona(String nombre, String apellido, String titulo, String aboutme, String banner, String img, String username, String cv, String email, String password) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.titulo = titulo;
@@ -59,6 +65,8 @@ public class Persona {
         this.img = img;
         this.username = username;
         this.cv = cv;
+        this.email = email;
+        this.password = password;
     }
     
     

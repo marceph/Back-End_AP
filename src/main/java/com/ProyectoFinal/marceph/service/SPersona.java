@@ -32,5 +32,13 @@ public class SPersona {
         return perso;
     }
 
+    public Persona loginPersona(String email, String password) {
+        List<Persona> personas = rPersona.findByEmailAndPassword(email, password);
+        
+        if(!personas.isEmpty()){
+            return personas.get(0);                        
+        }
+        return null;
+    }   
     
 }
