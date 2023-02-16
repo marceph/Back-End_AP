@@ -12,6 +12,7 @@ com\ProyectoFinal\marceph\repository\RSkill.class
 com\ProyectoFinal\marceph\controller\CPersona.class
 com\ProyectoFinal\marceph\entity\Red.class
 com\ProyectoFinal\marceph\repository\REstudio.class
+com\ProyectoFinal\marceph\WebConfig.class
 com\ProyectoFinal\marceph\controller\CExperiencia.class
 com\ProyectoFinal\marceph\entity\Persona.class
 com\ProyectoFinal\marceph\repository\RProyecto.class
